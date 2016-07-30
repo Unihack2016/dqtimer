@@ -8,10 +8,8 @@
  * Controller of the dqtimerApp
  */
 angular.module('dqtimerApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ["$scope", "$routeParams", "$firebaseObject", "$timeout", function ($scope, $routeParams, $firebaseObject, $timeout) {
+      var ref  =  firebase.database().ref();
+
+      $scope.request = $firebaseObject(ref.child('queueitems').child($routeParams.id));
+  }]);
