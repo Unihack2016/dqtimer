@@ -1,5 +1,26 @@
 <p>{{request.starttime}}</p>
 
+<h2>Gordon Ramsay's Restaurant</h2>
+
+<br>
+
+<div class="row">
+  <div id="summary" class="col-xs-10 col-xs-offset-1">
+    <h4 ng-controller="MainCtrl"><em>{{request.name}}</em> | <em>{{request.number}}</em> guests | <em>3rd</em> in queue</h4>
+  </div>
+</div>
+
 <div class="jumbotron" id="queue-timer">
   <h1 ng-controller="TimerCtrl">{{timer}}</h1>
+  <h4>Time remaining</h4>
+</div>
+
+<br>
+
+<div class="row">
+  <div id="bored" class="col-xs-10 col-xs-offset-1">
+    <h3><em>Bored waiting?</em></h3>
+
+    <button id="bored-btn" class="btn">See What's Around!</button>
+  </div>
 </div>
