@@ -3,6 +3,40 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#page-content{
+  flex: 1;
+}
+
+#logo-container {
+  padding: 15px;
+  text-align: center;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  margin-bottom: 0px;
+  border-width: 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#mobile-footer {
+  padding: 20px 0;
+  color: white;
+  border-top: 1px solid #e5e5e5;
+  background-color: #2B3442;
+}
+
+#dequeue-logo {
+  height: 50px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -18,8 +52,8 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Custom page header */
@@ -41,6 +75,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .container-narrow > hr {
@@ -88,4 +123,5 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+  
 }

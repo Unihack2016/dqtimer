@@ -23,28 +23,21 @@
     <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
-          <div class="navbar-header">
-
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#/">dqtimer</a>
+          <div id="logo-container" class="navbar-header col-sm-6">
+            <img id="dequeue-logo" src="images/dequeue-logo-medium.png" alt="Dequeue Logo" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="page-content">
     <div ng-view=""></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+    <div id="mobile-footer" class="footer">
+      <div class="container-fluid">
+        <p>FROM THE DEQUEUE TEAM</p>
+        <img src="images/unihack-logo.png" alt="Unihack logo" style="width: 70px;"/>
       </div>
     </div>
 
