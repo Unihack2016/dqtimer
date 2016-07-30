@@ -3,6 +3,89 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: white;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6ac26c+0,73c5c3+100 */
+  background: #6ac26c; /* Old browsers */
+  background: -moz-linear-gradient(top, #6ac26c 0%, #73c5c3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #6ac26c 0%,#73c5c3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #6ac26c 0%,#73c5c3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ac26c', endColorstr='#73c5c3',GradientType=0 ); /* IE6-9 */
+}
+
+#page-content{
+  flex: 1;
+}
+
+h2, h4 {
+  text-align: center;
+}
+
+#logo-container {
+  padding: 15px;
+  text-align: center;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  margin-bottom: 0px;
+  border-width: 0px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#bored {
+  text-align: center;
+  h3 {
+    margin-bottom: 30px;
+  }
+}
+
+#pokemongo {
+  width: 65%;
+}
+
+#interest-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#bored-btn {
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 10px 30px;
+  transition: all 0.3s ease-in-out;
+  background: none;
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: #5eebc0;
+  }
+}
+
+#queue-timer {
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#mobile-footer {
+  padding: 10px 0;
+  color: white;
+  border-top: 1px solid #e5e5e5;
+  background-color: #404040;
+}
+
+#dequeue-logo {
+  height: 50px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -18,8 +101,8 @@ body {
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Custom page header */
@@ -41,6 +124,7 @@ body {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
 
 .container-narrow > hr {
@@ -88,4 +172,5 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+  
 }
