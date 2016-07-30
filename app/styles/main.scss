@@ -21,6 +21,11 @@ body {
   flex: 1;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 h2, h4 {
   text-align: center;
 }
@@ -107,7 +112,6 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
