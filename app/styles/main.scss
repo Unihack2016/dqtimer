@@ -3,6 +3,32 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+#poi-heading {
+  margin-bottom: 10px;
+}
+
+#poi-buttons {
+  text-align: center;
+  padding: 10px 30px;
+
+  a {
+    color: white;
+    border-radius: 3px;
+    background: none;
+    border: 2px solid;
+  }
+
+  li {
+    &.active {
+      a {
+        border: none;
+        background-color: white;
+        color: #6BC277;
+      }
+    }
+  }
+}
+
 body {
   display: flex;
   min-height: 100vh;
@@ -15,6 +41,10 @@ body {
   background: -webkit-linear-gradient(top, #6ac26c 0%,#73c5c3 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #6ac26c 0%,#73c5c3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ac26c', endColorstr='#73c5c3',GradientType=0 ); /* IE6-9 */
+}
+
+#mobile-nav {
+  margin-bottom: 0;
 }
 
 #page-content{
@@ -46,17 +76,19 @@ h2, h4 {
 #bored {
   text-align: center;
   h3 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
 #pokemongo {
-  width: 65%;
+  width: 60%;
+  padding: 5px;
+  background-color: white;
 }
 
 #interest-container {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #bored-btn {
@@ -67,6 +99,7 @@ h2, h4 {
   background: none;
   text-decoration: none;
   color: white;
+  margin-bottom: 10px;
   &:hover{
     color: #5eebc0;
   }
