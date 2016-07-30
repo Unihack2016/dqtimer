@@ -45,12 +45,23 @@ h2, h4 {
   }
 }
 
+#pokemongo {
+  width: 65%;
+}
+
+#interest-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 #bored-btn {
   border: 2px solid;
   border-radius: 3px;
   padding: 10px 30px;
   transition: all 0.3s ease-in-out;
   background: none;
+  text-decoration: none;
+  color: white;
   &:hover{
     color: #5eebc0;
   }
